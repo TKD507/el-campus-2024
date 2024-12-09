@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+package "el-campas"{
+    usecase "大学からのお知らせ" as f1
+    usecase "各科目の曜日と場所の表示" as f2
+    usecase "課題の提出と確認" as f3
+    usecase "アンケートの回答" as f4 
+}
+:user: --> (ログイン)
+ログイン --> (el-campas)
+"el-campas" -->("ログアウト") 
+@endful
