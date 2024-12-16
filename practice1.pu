@@ -1,0 +1,8 @@
+@startuml
+actor Client as "クライアント"
+participant Server as "サーバー"
+participant Database as "データベース"
+Client -> Server: データを要求
+Server -> Database: 問い合わせ
+Database --> Server: 結果を習得
+Server --> Client: データを返す
